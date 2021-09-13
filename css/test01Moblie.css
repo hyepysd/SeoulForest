@@ -1,0 +1,63 @@
+@media all and (min-width: 320px) and (max-width:767px) {
+    body{
+        background-color: #b3cc9d;
+    }   
+
+    #wrap{
+        width: 90%;
+        overflow-x: hidden;
+        background-color: rgba(255, 0, 0, 0.363);
+        margin: auto;
+        ;
+    }
+ 
+    .wrap{
+        width: 100%;
+        ;
+    }
+
+    .mainImg{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header .logo{
+        margin-left: 0px;
+    }
+
+
+    .mobileMenu{
+        width: 40px;
+        float: right;
+    }
+
+    .mobileMenu div{
+        width: 40px;
+        height: 7px;
+        background-color: #5e7a4f;
+        margin: 5px 0px;
+        border-radius: 7px;
+    }
+
+    .mainText{
+        width: 55%;
+        background-color: thistle;
+        padding: 10px 0px;
+        margin-left: 0px;
+        margin-top: 50px;
+        float: right;
+    }
+    
+    .mainText p{
+        font-size: 32px;
+        ;
+    }
+}
