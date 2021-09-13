@@ -7,7 +7,7 @@
         width: 90%;
         background-color: rgba(255, 0, 0, 0.363);
         margin: auto;
-        ;
+        overflow-x: hidden;
     }
  
     .wrap{
