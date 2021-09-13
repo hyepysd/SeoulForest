@@ -52,13 +52,13 @@
         background-image: url(../img/MoMainImg.jpg);
         background-size: cover;
         margin-top: 50px;
-        border-radius: 70px 70px 0px 0px;
+        border-radius: 50px 50px 0px 0px;
     }
 
     .MoMainImg{
         width: 100%;
         height: 320px;
-        border-radius: 70px 70px 0px 0px;
+        border-radius: 50px 50px 0px 0px;
         background-color: rgba(0, 0, 0, 0.2);
         position: absolute;
         top: 120px;
@@ -76,8 +76,9 @@
     }
     
     .mainText p{
-        font-size: 1.5em;
-        ;
+        font-size: 25px;
+        padding-left: 0px;
+        padding: 10px;
     }
 
     .mainIcon {
@@ -85,8 +86,9 @@
         height: 100px;
         float: right;
         transform: translateX(0px) translateY(130px) rotate(180deg);
-
-        
+        position: relative;
+        z-index: 5;
+        background-color: #b3cc9d;
     }
 
     .mainIcon img{
