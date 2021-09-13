@@ -22,7 +22,7 @@
 
     header{
         width: 100%;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     header nav{
@@ -32,7 +32,6 @@
     header .logo{
         margin-left: 0px;
     }
-
 
     .mobileMenu{
         width: 40px;
@@ -52,7 +51,7 @@
         height: 320px;
         background-image: url(../img/MoMainImg.jpg);
         background-size: cover;
-        margin-top: 70px;
+        margin-top: 50px;
         border-radius: 70px 70px 0px 0px;
     }
 
@@ -62,7 +61,7 @@
         border-radius: 70px 70px 0px 0px;
         background-color: rgba(0, 0, 0, 0.2);
         position: absolute;
-        top: 170px;
+        top: 120px;
     }
 
     .mainText{
@@ -81,7 +80,22 @@
         ;
     }
 
-    .mainIcon{
-        display: none;
+    .mainIcon {
+        width: 300px;
+        height: 100px;
+        float: right;
+        transform: translateX(0px) translateY(130px) rotate(180deg);
+
+        
+    }
+
+    .mainIcon img{
+        transform: rotate(180deg);
+        width: 80px;
+        float: left;
+    }
+
+    .mainIcon img:first-of-type{
+        margin-left: 0px;
     }
 }
