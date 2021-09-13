@@ -5,16 +5,9 @@
 
     #wrap{
         width: 100%;
-        background-color: rgba(224, 207, 49, 0.767);
-        margin: auto;
+        overflow: hidden;
     }
  
-    .wrap{
-        /* width: 100%;
-        height: 100vh;
-        overflow: scroll; */
-        display: none;
-    }
 
     .mainImg{
         display: none;
