@@ -196,7 +196,7 @@
     }
 
     .MoFlimingTab{
-        width: 90%;
+        width: 93%;
         height: 250px;
         background-color: #f0ebb6;
         margin: auto;
@@ -212,47 +212,30 @@
     .MoFlimingTab label{
         display: block;
         float: left;
-        font-size: 20px;
+        font-size: 16px;
         color: #5e7a4f;
         font-weight: 500;
-        padding: 3px 10px;
-        margin: 0px 5px;
+        width: 30%;
+        text-align: center;
         margin-top: 65px;
-
     }
 
     .MoFlimingTab label:first-of-type{
-        margin-left: 8px;
+        margin-left: 3%;
     }
 
-    .MoFlimingTab input:first-of-type:checked ~ .filming{
-        display: block;
-    }
-
-    .MoFlimingTab input:first-of-type:checked ~ label:first-of-type{
-        background-color: #8aac78;
-        color: white;
-        border-radius: 13px;
-    }
-
-    .MoFlimingTab input:nth-of-type(2):checked ~ .coronation{
-        display: block;
-    }
-
-    .MoFlimingTab input:nth-of-type(2):checked ~ label:nth-of-type(2){
-        background-color: #8aac78;
-        color: white;
-        border-radius: 13px;
-    }
-
+    .MoFlimingTab input:first-of-type:checked ~ .filming,
+    .MoFlimingTab input:nth-of-type(2):checked ~ .coronation,
     .MoFlimingTab input:nth-of-type(3):checked ~ .busking{
         display: block;
     }
 
+    .MoFlimingTab input:first-of-type:checked ~ label:first-of-type,
+    .MoFlimingTab input:nth-of-type(2):checked ~ label:nth-of-type(2),
     .MoFlimingTab input:nth-of-type(3):checked ~ label:nth-of-type(3){
         background-color: #8aac78;
         color: white;
-        border-radius: 13px;
+        border-radius: 10px;
     }
 
     .MoFlimingTab div{
@@ -266,8 +249,8 @@
 
     .filming table{
         margin: auto;
-        width: 80%;
-        top: 10px;
+        width: 95%;
+        top: 20px;
         position: relative;
         font-size: 18px;
         color: #5e7a4f;
