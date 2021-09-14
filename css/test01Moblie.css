@@ -5,7 +5,7 @@
 
     #wrap{
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
  
 
@@ -44,6 +44,7 @@
         height: 320px;
         background-image: url(../img/MoMainImg.jpg);
         background-size: cover;
+        background-position: center center;
         margin-top: 50px;
         border-radius: 50px 50px 0px 0px;
     }
@@ -75,10 +76,10 @@
     }
 
     .mainIcon {
-        width: 300px;
+        width: 280px;
         height: 90px;
         float: right;
-        transform: translateX(20px) translateY(110px);
+        transform: translateX(0px) translateY(110px);
         position: relative;
         z-index: 5;
         background-color: #b3cc9d;
@@ -108,7 +109,7 @@
 
     .forestIcon{
         width: 100%;
-        height: 300px;
+        height: 520px;
         margin-top: 30px;
     }
 
@@ -123,7 +124,7 @@
 
     .forestIcon li p:first-of-type{
         font-size: 18px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .forestIcon li p:last-of-type{
@@ -135,5 +136,177 @@
     .forestIcon li:nth-of-type(3),
     .forestIcon li:nth-of-type(4){
         margin-top: 30px;
+    }
+
+
+    /* forFilming */
+    .forFilming{
+        width: 100%;
+        background-color: #b3cc9d;
+        margin-top: 50px;
+        padding-top: 0px;
+        display: block;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .forFilming h2{
+        padding-top: 40px;
+    }
+
+    .forFilming button,
+    .flimingText{
+        display: none;
+    }
+
+    .slideFilming_01,
+    .slideFilming_02{
+        display: none;
+    }
+
+    .MoFliming{
+        width: 80%;
+        height: 200px;
+        background-image: url(../img/MoFliming.jpg);
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+        border-radius: 30px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .MoFlimimgBg{
+        width: 80%;
+        height: 200px;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.329);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+
+    .MoFlimimgBg p{
+        font-size: 15px;
+        color: white;
+        line-height: 150%;
+        margin-top: 140px;
+        margin-left: 20px;
+    }
+
+    .MoFlimingTab{
+        width: 90%;
+        height: 250px;
+        background-color: #f0ebb6;
+        margin: auto;
+        border-radius: 40px;
+        margin-top: -50px;
+        clear: both;
+    }
+
+    .MoFlimingTab input{
+        display: none;
+    }
+
+    .MoFlimingTab label{
+        display: block;
+        float: left;
+        font-size: 20px;
+        color: #5e7a4f;
+        font-weight: 500;
+        padding: 3px 10px;
+        margin: 0px 5px;
+        margin-top: 65px;
+
+    }
+
+    .MoFlimingTab label:first-of-type{
+        margin-left: 8px;
+    }
+
+    .MoFlimingTab input:first-of-type:checked ~ .filming{
+        display: block;
+    }
+
+    .MoFlimingTab input:first-of-type:checked ~ label:first-of-type{
+        background-color: #8aac78;
+        color: white;
+        border-radius: 13px;
+    }
+
+    .MoFlimingTab input:nth-of-type(2):checked ~ .coronation{
+        display: block;
+    }
+
+    .MoFlimingTab input:nth-of-type(2):checked ~ label:nth-of-type(2){
+        background-color: #8aac78;
+        color: white;
+        border-radius: 13px;
+    }
+
+    .MoFlimingTab input:nth-of-type(3):checked ~ .busking{
+        display: block;
+    }
+
+    .MoFlimingTab input:nth-of-type(3):checked ~ label:nth-of-type(3){
+        background-color: #8aac78;
+        color: white;
+        border-radius: 13px;
+    }
+
+    .MoFlimingTab div{
+        width: 80%;
+        height: 100px;
+        display: none;
+        margin: auto;
+        top: 115px;
+    }
+
+
+    .filming table{
+        margin: auto;
+        width: 80%;
+        top: 10px;
+        position: relative;
+        font-size: 18px;
+        color: #5e7a4f;
+        font-weight: bold;
+    }
+
+    .filming table tr:nth-of-type(even){
+        color: #92aa85;
+        font-weight: 400;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .info,.volunteer,.supporter,.business,footer,.bg{
+        display: none;
+        ;
     }
 }
