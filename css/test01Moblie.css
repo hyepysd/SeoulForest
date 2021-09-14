@@ -249,10 +249,11 @@
 
     .filming table{
         margin: auto;
-        width: 95%;
+        width: 90%;
         top: 20px;
         position: relative;
         font-size: 18px;
+        margin-left: 7%;
         color: #5e7a4f;
         font-weight: bold;
     }
