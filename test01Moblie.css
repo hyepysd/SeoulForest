@@ -1,0 +1,392 @@
+@media all and (min-width: 320px) and (max-width:767px) {
+    body{
+        background-color: #dae6d3;
+
+    }   
+
+    #wrap{
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
+    .mainImg{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header .logo{
+        margin-left: 0px;
+        width: 50%;
+    }
+
+    header .logo img{
+        width: 100%;
+    }
+
+    .mobileMenu{
+        width: 40px;
+        float: right;
+    }
+
+    .mobileMenu div{
+        width: 35px;
+        height: 5px;
+        background-color: #5e7a4f;
+        margin: 5px 0px;
+        border-radius: 7px;
+    }
+
+    .main{
+        width: 100%;
+        height: 320px;
+        background-image: url(../img/MoMainImg.jpg);
+        background-size: cover;
+        background-position: center center;
+        margin-top: 50px;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .MoMainImg{
+        width: 100%;
+        height: 320px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 120px;
+    }
+
+    .mainText{
+        width: 200px;
+        padding: 10px 0px;
+        margin-left: 0px;
+        margin-top: 30px;
+        margin-right: 30px;
+        float: right;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .mainText p{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .mainIcon {
+        width: 280px;
+        height: 90px;
+        float: right;
+        transform: translateX(0px) translateY(110px);
+        position: relative;
+        z-index: 5;
+        background-color: #b3cc9d;
+        border-radius: 100px 0px 0px 100px;
+    }
+
+    .mainIcon img{
+        width: 75px;
+        float: left;
+        margin: 0px 15px;
+        margin: 7px;
+    }
+
+    .mainIcon img:first-of-type{
+        margin-left: 10px;
+    }
+
+    /* seoulForest */
+
+    .seoulForest{
+        margin-top: 100px;
+    }
+
+    .mainTitle{
+        font-size: 30px;
+    }
+
+    .forestIcon{
+        width: 100%;
+        height: 470px;
+        margin-top: 30px;
+    }
+
+    .forestIcon li{
+        float: left;
+        width: 50%;
+    }
+
+    .forestIcon li>img{
+        width: 80%;
+    }
+
+    .forestIcon li p:first-of-type{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .forestIcon li p:last-of-type{
+        font-size: 18px;
+        padding-top: 0px;
+        font-weight: bold;
+    }
+
+    .forestIcon li:nth-of-type(3),
+    .forestIcon li:nth-of-type(4){
+        margin-top: 30px;
+    }
+
+
+    /* forFilming */
+
+    .filimingCont{
+        height: 500px;
+    }
+
+    .forFilming{
+        width: 100%;
+        background-color: #b3cc9d;
+        margin-top: 50px;
+        padding-top: 0px;
+        display: block;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .forFilming h2,.info h2{
+        padding-top: 40px;
+    }
+
+    .forFilming button,
+    .flimingText{
+        display: none;
+    }
+
+    .slideFilming_01,
+    .slideFilming_02{
+        display: none;
+    }
+
+    .MoFliming{
+        width: 80%;
+        height: 200px;
+        background-image: url(../img/MoFliming.jpg);
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+        border-radius: 30px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .MoFlimimgBg{
+        width: 80%;
+        height: 200px;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.329);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+
+    .MoFlimimgBg p{
+        font-size: 15px;
+        color: white;
+        line-height: 150%;
+        margin-top: 140px;
+        margin-left: 20px;
+    }
+
+    .MoFlimingTab{
+        width: 93%;
+        height: 250px;
+        background-color: #f0ebb6;
+        margin: auto;
+        border-radius: 40px;
+        margin-top: -50px;
+        clear: both;
+    }
+
+    .MoFlimingTab input{
+        display: none;
+    }
+
+    .MoFlimingTab label{
+        display: block;
+        float: left;
+        font-size: 18px;
+        color: #5e7a4f;
+        font-weight: 500;
+        width: 30%;
+        height: 27px;
+        text-align: center;
+        margin-top: 65px;
+    }
+
+    .MoFlimingTab label:first-of-type{
+        margin-left: 3%;
+    }
+
+    .MoFlimingTab input:first-of-type:checked ~ .filming,
+    .MoFlimingTab input:nth-of-type(2):checked ~ .coronation,
+    .MoFlimingTab input:nth-of-type(3):checked ~ .busking{
+        display: block;
+    }
+
+    .MoFlimingTab input:first-of-type:checked ~ label:first-of-type,
+    .MoFlimingTab input:nth-of-type(2):checked ~ label:nth-of-type(2),
+    .MoFlimingTab input:nth-of-type(3):checked ~ label:nth-of-type(3){
+        background-color: #8aac78;
+        color: white;
+        border-radius: 10px;
+        padding: 3px 0px;
+    }
+
+    .MoFlimingTab input:first-of-type:checked ~ label:first-of-type{
+        width: 24%;
+        margin-left: 32px;
+    }
+
+    .MoFlimingTab div{
+        width: 80%;
+        height: 100px;
+        display: none;
+        margin: auto;
+        top: 115px;
+    }
+
+
+    .filming table{
+        margin: auto;
+        width: 90%;
+        top: 20px;
+        position: relative;
+        font-size: 18px;
+        margin-left: 7%;
+        color: #5e7a4f;
+        font-weight: bold;
+    }
+
+    .filming table tr:nth-of-type(even){
+        color: #92aa85;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .filming table tr td:nth-of-type(even){
+        text-align: center;
+    }
+    
+    .filming table tr:nth-of-type(even) td{
+        padding-bottom: 10px;
+    }
+
+/* info */
+    .info{
+        margin-top: 0px;
+        position: relative;
+    }
+    .subTitle{
+        display: none;
+    }
+
+    .subTitleMo{
+        text-align: center;
+        color: #3c4935;
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
+        font-size: 17.5px;
+        font-weight: 500;
+    }
+    
+    .yellowCircle{
+        background-color: #adbc93;
+        width: 35px;
+        height: 35px;
+        left: 50%;
+        top: 240px;
+        transform: translateX(-50%);
+        z-index: 4;
+        opacity: 0.9;
+    }
+
+    .infoText{
+        width: 93%;
+        height: 400px;
+        background-color: #ebe6b3;
+        margin: auto;
+        float: none;
+        border: none;
+        margin-top: 30px;
+        border-radius: 70px 70px 20px 20px;
+    }
+
+    .infoText .infoMainImg{
+        width: 80%;
+        height: 180px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 20px 20px;
+        background-color: red;
+        clear: both;
+        background-image: url(../img/MoMainImg.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        top: 30px;
+    }
+
+    .infoImg{
+        display: none;
+    }
+
+    .infoText ul{
+        margin: auto;
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .infoText ul li span{
+        width: 15px;
+        height: 15px;
+        
+    }
+    
+    .infoText ul li{
+        font-size: 15px;
+        color: #748c67;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .volunteer,.supporter,.business,footer,.bg{
+        display: none;
+        ;
+    }
+}
