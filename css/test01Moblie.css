@@ -5,7 +5,7 @@
     }   
 
     #wrap{
-        width: 90%;
+        width: 100%;
         /* overflow: hidden; */
     }
 
@@ -24,11 +24,11 @@
 
     header .logo{
         margin-left: 0px;
-        width: 80%;
+        width: 50%;
     }
 
     header .logo img{
-        width: 60%;
+        width: 100%;
     }
 
     .mobileMenu{
@@ -144,6 +144,11 @@
 
 
     /* forFilming */
+
+    .filimingCont{
+        height: 500px;
+    }
+
     .forFilming{
         width: 100%;
         background-color: #b3cc9d;
@@ -216,10 +221,11 @@
     .MoFlimingTab label{
         display: block;
         float: left;
-        font-size: 16px;
+        font-size: 18px;
         color: #5e7a4f;
         font-weight: 500;
         width: 30%;
+        height: 27px;
         text-align: center;
         margin-top: 65px;
     }
@@ -240,6 +246,12 @@
         background-color: #8aac78;
         color: white;
         border-radius: 10px;
+        padding: 3px 0px;
+    }
+
+    .MoFlimingTab input:first-of-type:checked ~ label:first-of-type{
+        width: 24%;
+        margin-left: 32px;
     }
 
     .MoFlimingTab div{
@@ -265,11 +277,162 @@
     .filming table tr:nth-of-type(even){
         color: #92aa85;
         font-weight: 400;
+        font-size: 13px;
+    }
+
+    .filming table tr td:nth-of-type(even){
+        text-align: center;
+    }
+    
+    .filming table tr:nth-of-type(even) td{
+        padding-bottom: 10px;
     }
 
 /* info */
     .info{
         margin-top: 0px;
+        position: relative;
+        height: 670px;
+    }
+    .subTitle{
+        display: none;
+    }
+
+    .subTitleMo{
+        text-align: center;
+        color: #3c4935;
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
+        font-size: 17.5px;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+    }
+    
+    .yellowCircle{
+        background-color: #adbc93;
+        width: 35px;
+        height: 35px;
+        left: 50%;
+        top: 240px;
+        transform: translateX(-50%);
+        z-index: 4;
+        opacity: 0.9;
+    }
+
+    .imgContBox{
+        width: 93%;
+        height: 380px;
+        background-color: #ebe6b3;
+        margin: auto;
+        float: none;
+        border: none;
+        margin-top: 30px;
+        border-radius: 70px 70px 20px 20px;
+    }
+
+    .imgContBox .infoMainImg{
+        width: 80%;
+        height: 180px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 20px 20px;
+        clear: both;
+        background-image: url(../img/MoMainImg.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        top: 30px;
+    }
+
+    .infoImg{
+        display: none;
+    }
+
+    .imgContBox ul{
+        margin: auto;
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .imgContBox ul li span{
+        width: 15px;
+        height: 15px;
+        background-color: #5e794f;
+        border-radius: 100%;
+        float: left;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    
+    .imgContBox ul li{
+        font-size: 15px;
+        color: #748c67;
+        font-weight: 500;
+    }
+
+    .imgContBox ul li:nth-of-type(even){
+        margin-left: 50px;
+    }
+
+/* volunteer */
+    .volunteer{
+        margin-top: 30px;
+    }
+
+    .volunteer .imgContBox{
+        background-color: #748c67
+    }
+
+    .volunteer .infoMainImg{
+        background-image: url(../img/volunteerImg.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .volunteer .infoText{
+        margin-left: 0px;
+        border: none;
+        position: relative;
+        top: -250px;
+    }       
+
+    .volunteer .infoText ul{
+        margin: auto;
+        width: 80%;
+    }
+
+    .volunteer .infoText ul li span{
+        background-color: #ebe6b3;
+        width: 15px;
+        height: 15px;
+    }
+
+    .volunteer .infoText ul li{
+        font-size: 15px;
+        color: #ebe6b3;
+    }
+
+    .volunteer .infoText button{
+        width: 120px;
+        height: 35px;
+        background-color: #ebe6b3;
+        position: relative;
+        right: 0;
+        border-radius: 10px;
+        border: none;
+        ;
+    }
+
+    .volunteer .infoText button span{
+        display: none;
+    }
+
+    .volunteer .infoText button p{
+        font-size: 15px;
+        padding: 0px;
+        float: none;
+        color: #3c4935;
     }
 
 
@@ -285,17 +448,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    .volunteer,.supporter,.business,footer,.bg{
+    .supporter,.business,footer,.bg{
         display: none;
-        ;
+        
     }
 }
