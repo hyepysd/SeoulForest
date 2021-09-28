@@ -9,6 +9,9 @@
         /* overflow: hidden; */
     }
 
+    .wrap{
+        height: 0px;
+    }
     .mainImg{
         display: none;
     }
@@ -319,6 +322,7 @@
         font-weight: 500;
         letter-spacing: -0.05em;
         display: block;
+        line-height: 140%;
     }
     
     .yellowCircle{
@@ -348,7 +352,7 @@
         height: 180px;
         margin: auto;
         overflow: hidden;
-        border-radius: 20px 20px;
+        border-radius: 40px;
         clear: both;
         background-image: url(../img/MoMainImg.jpg);
         background-size: cover;
@@ -393,6 +397,10 @@
         height: 650px;
     }
 
+    .volunteer .subTitleMo{
+        margin-top: -10px;
+    }
+
     .volunteer .infoText{
         margin: auto;
         margin-top: 30px;
@@ -426,7 +434,8 @@
         padding-left: 40px;
     }
 
-    .volunteer .infoText button{
+    .volunteer .infoText button,
+    .business button{
         width: 120px;
         height: 30px;
         background-color: #ebe6b3;
@@ -437,11 +446,15 @@
         margin-right: 50px;
     }
 
-    .volunteer .infoText button span i:first-of-type{
+    .volunteer .infoText button span i:first-of-type,
+    .volunteer button span i:first-of-type,
+    .business button span i:first-of-type,
+    .business button span i:first-of-type{
         display: none;
     }
 
-    .infoText button span{
+    .infoText button span,
+    .business button span{
         border-radius: 0px;
         background-color: #3c4935;
         width: 40px;
@@ -450,25 +463,35 @@
         margin: 0;
         border-radius: 0px 10px 10px 0px;
     }
-    .infoText button span i:last-child{
+
+    .infoText button span i:last-child,
+    .business button span i:last-child{
         margin: 0.5;
         margin-top: 1.5px;
         display: block;
+        color: #d8e4cc;
     }
 
 
-    .volunteer .infoText button p{
+    .volunteer .infoText button p,
+    .business button p{
         font-size: 14px;
         padding: 0px;
         color: #3c4935;
-        line-height: 230%;;
+        line-height: 230%;
         margin-left: 14px;
+        float: left;
+        font-weight: bold;
     }
 
     .volunteer .yellowCircle{
         background-color: #ebe6b3;
         position: relative;
-        top: 210px;
+        top: 165px;
+    }
+
+    .business .yellowCircle{
+        display: none;
     }
 
 /* supporter */
@@ -482,7 +505,7 @@
     }
 
     .supporterTab{
-        height: 700px;
+        height: 600px;
     }
 
     .label{
@@ -608,11 +631,134 @@
     }
 
 
+    /* business */
+    .business .subTitle{
+        text-align: center;
+        color: #3c4935;
+        font-size: 17.5px;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        line-height: 140%;
+    }
 
+    .businessBoxMo{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
 
+    .businessLine{
+        width: 100%;
+        height: 80px;
+        display: block;
+        position: relative;
 
+    }
+
+    .businessBox,.businessBoxHide{
+        display: none;
+    }
+
+    .businessBoxMoImg {
+        width: 60px;
+        height: 80px;
+        background-color: #8aac78;
+        border-radius: 0px 20px 0px 0px;
+        position: absolute;
+    }
+
+    .businessBoxMoImg img{
+        width: 50px;
+        margin: auto;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .businessLine:last-of-type .businessBoxMoImg{
+        height: 60px;
+    }
+
+    .businessBoxMoP{
+        float: right;
+        width: 70%;
+        height: 50px;
+        background-color: #b2c9a5;
+        border-radius: 15px;
+        margin-top: 7px;
+    }
+
+    .businessBoxMoP p{
+        margin-left: 20px;
+        font-weight: bold;
+        color: #5e7a4f;
+    }
     
-    .business,footer,.bg,.subTitle{
+    .businessBoxMoP span{
+        font-weight: 400;
+    }
+
+    .businessLine:nth-of-type(even) .businessBoxMoImg,
+    .businessLine:nth-of-type(even) .businessBoxMoP{
+        background-color: #ebe6b3;
+    }
+
+    .businessLine{
+        margin-top: -0px ;
+        margin-top: -20px;
+    }
+
+    .business button{
+        margin: auto;
+        float: none;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .business button i:last-child{
+        transform: rotate(90deg);
+    }
+
+
+/* footer */
+    footer{
+        height: 180px;
+    }
+    .footerLogo{
+        width: 82%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .footerLogo img{
+        margin: auto;
+        display: block;
+        width: 200px;
+    }
+    .footerLogo p{
+        font-weight: lighter;
+        font-size: 15px;
+
+    }
+
+    .footerLogo p:first-of-type{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .footerLogo p:nth-of-type(2), .footerLogo p:last-child{
+        margin-top: 5px;
+    }
+
+
+    .bg,.subTitle,.footerNav{
         display: none;
         
     }
