@@ -22,7 +22,20 @@
                 $('.businessBoxHide').css({'display':'none'});
                 $('.businessBox button').show();
             })
-        })
+        });
+
+        $(function(){
+            $('.businessMoButton').click(function(){
+                $('.businessBoxMoHide').css({'display':'block'});
+                $('.businessMoButton').css({'display':'none'});
+            })  
+            $('.close').click(function(){
+                $('.businessBoxMoHide').css({'display':'none'});
+                $('.businessMoButton').css({'display':'block'});
+            })  
+
+        });
+
 
         $(function(){
             var circle1 = new ProgressBar.Circle('.circle1', {
@@ -580,15 +593,69 @@
                             <p>자원봉사<br><span>02-460-2924</span></p>
                         </div>
                     </div>
-                    <button>
-                        <p>더보기</p>
-                        <span>
-                            <i class="fas fa-arrow-right fa-3x"></i>
-                            <i class="fas fa-plus fa-2x"></i>
-                        </span>
+                    
+                </div>
+                <div class="businessBoxMoHide">
+                    <div class="businessLine">
+                        <div class="businessBoxMoImg">
+                            <img src="./img/Contact_10.png" alt="">
+                        </div>
+                        <div class="businessBoxMoP">
+                            <p>곤충식물원, 나비정원	<br><span>02-460-2927, 2928</span></p>
+                        </div>
+                    </div>
+                    <div class="businessLine">
+                        <div class="businessBoxMoImg">
+                            <img src="./img/Contact_11.png" alt="">
+                        </div>
+                        <div class="businessBoxMoP">
+                            <p>대관, 촬영, 버스킹신청<br><span>02-460-2905</span></p>
+                        </div>
+                    </div>
+                    <div class="businessLine">
+                        <div class="businessBoxMoImg">
+                            <img src="./img/Contact_12.png" alt="">
+                        </div>
+                        <div class="businessBoxMoP">
+                            <p>시니어 프로그램	<br><span>02-460-2922, 2909</span></p>
+                        </div>
+                    </div>
+                    <div class="businessLine">
+                        <div class="businessBoxMoImg">
+                            <img src="./img/Contact_13.png" alt="">
+                        </div>
+                        <div class="businessBoxMoP">
+                            <p>꽃사슴 관련 문의	<br><span>02-460-2925</span></p>
+                        </div>
+                    </div>
+                    <div class="businessLine">
+                        <div class="businessBoxMoImg">
+                            <img src="./img/Contact_14.png" alt="">
+                        </div>
+                        <div class="businessBoxMoP">
+                            <p>프로그램<br><span>02-460-2925</span></p>
+                        </div>
+                    </div>
+                    <div class="businessLine">
+                        <div class="businessBoxMoImg">
+                            <img src="./img/Contact_15.png" alt="">
+                        </div>
+                        <div class="businessBoxMoP">
+                            <p>동·식물 관련 문의	<br><span>02-460-2905</span></p>
+                        </div>
+                    </div>
+                    <button class="close">
+                        <p>접기</p>
+                        <span><i class="fas fa-arrow-right fa-2x"></i></span>
                     </button>
                 </div>
-                
+                <button class="businessMoButton">
+                    <p>더보기</p>
+                    <span>
+                        <i class="fas fa-arrow-right fa-3x"></i>
+                        <i class="fas fa-plus fa-2x"></i>
+                    </span>
+                </button>
             </div>
         </section>
         <footer>
