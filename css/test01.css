@@ -31,7 +31,7 @@ body{
 header{
     width: 100%;
     height: 40px;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .logo{
@@ -113,11 +113,11 @@ section{
 }
 
 .mainIcon{
-    width: 600px;
+    width: 700px;
     height: 140px;
     background-color: #748c67;
     clear: both;
-    transform: translateY(100px) translateX(-300px);
+    transform: translateY(100px) translateX(-200px);
     border-radius: 0px 100px 100px 0px;
 }
 
@@ -130,7 +130,7 @@ section{
 }
 
 .mainIcon img:first-of-type{
-    margin-left: 185px;
+    margin-left: 290px;
 }
 
 .mainImg{
@@ -1067,6 +1067,9 @@ footer{
 
 /* 모바일 안보이게 */
 .MoFlimimgBg,.MoFliming,.MoFlimingTab,.subTitleMo
-,.labelMo,.fa-angle-double-right,#supporter,.businessBoxMo,.businessBoxMoHide{
+,.labelMo,.fa-angle-double-right,#supporter,
+.businessBoxMo,.businessBoxMoHide,.fa-angle-double-right,
+.businessMoButton
+{
     display: none;
 }
