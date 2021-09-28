@@ -649,6 +649,7 @@
         width: 80%;
         margin: auto;
         margin-top: 50px;
+        display: block;
     }
 
     .businessLine{
