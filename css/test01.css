@@ -754,7 +754,6 @@ span {
 .supporterTab input:first-of-type:checked ~ .label label:first-of-type{
     /* animation: lineAni 1s; */
     animation-fill-mode: forwards;
-
 }
 
 .supporterTab input:nth-of-type(2):checked ~ .label label:nth-of-type(2){
@@ -1064,4 +1063,10 @@ footer{
     font-size: 18px;
     color: #dae6d3;
     padding: 8.5px 0px;
+}
+
+/* 모바일 안보이게 */
+.MoFlimimgBg,.MoFliming,.MoFlimingTab,.subTitleMo
+,.labelMo,.fa-angle-double-right,#supporter{
+    display: none;
 }

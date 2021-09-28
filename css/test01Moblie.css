@@ -105,6 +105,7 @@
 
     .seoulForest{
         margin-top: 100px;
+        height: 500px;
     }
 
     .mainTitle{
@@ -112,14 +113,20 @@
     }
 
     .forestIcon{
-        width: 100%;
-        height: 470px;
+        width: 80%;
+        height: 400px;
         margin-top: 30px;
+    }
+
+    .forestIcon ul{
+        width: 100%;
+        height: 300px;
     }
 
     .forestIcon li{
         float: left;
-        width: 50%;
+        width: 48%;
+        margin: 0px 3px;
     }
 
     .forestIcon li>img{
@@ -146,7 +153,7 @@
     /* forFilming */
 
     .filimingCont{
-        height: 500px;
+        height: 440px;
     }
 
     .forFilming{
@@ -205,13 +212,18 @@
     }
 
     .MoFlimingTab{
-        width: 93%;
+        width: 90%;
         height: 250px;
         background-color: #f0ebb6;
         margin: auto;
         border-radius: 40px;
         margin-top: -50px;
         clear: both;
+        display: block;
+    }
+
+    .MoFliming,.MoFlimimgBg{
+        display: block;
     }
 
     .MoFlimingTab input{
@@ -294,6 +306,7 @@
         position: relative;
         height: 670px;
     }
+
     .subTitle{
         display: none;
     }
@@ -301,12 +314,11 @@
     .subTitleMo{
         text-align: center;
         color: #3c4935;
-        position: relative;
-        z-index: 1;
         margin-top: 30px;
         font-size: 17.5px;
         font-weight: 500;
         letter-spacing: -0.05em;
+        display: block;
     }
     
     .yellowCircle{
@@ -320,8 +332,8 @@
         opacity: 0.9;
     }
 
-    .imgContBox{
-        width: 93%;
+    .infoText{
+        width: 90%;
         height: 380px;
         background-color: #ebe6b3;
         margin: auto;
@@ -331,7 +343,7 @@
         border-radius: 70px 70px 20px 20px;
     }
 
-    .imgContBox .infoMainImg{
+    .infoText .infoMainImg{
         width: 80%;
         height: 180px;
         margin: auto;
@@ -349,57 +361,53 @@
         display: none;
     }
 
-    .imgContBox ul{
+    .infoText ul{
         margin: auto;
-        width: 80%;
-        margin-top: 50px;
+        width: 70%;
+        margin-top: 45px;
     }
 
-    .imgContBox ul li span{
+    .infoText ul li span{
         width: 15px;
         height: 15px;
         background-color: #5e794f;
         border-radius: 100%;
         float: left;
         margin-top: 5px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     
-    .imgContBox ul li{
-        font-size: 15px;
+    .infoText ul li{
+        font-size: 14px;
         color: #748c67;
         font-weight: 500;
     }
-
-    .imgContBox ul li:nth-of-type(even){
-        margin-left: 50px;
+    .infoText ul li:nth-child(even){
+        padding-left: 40px;
+        padding-bottom: 5px;
     }
 
 /* volunteer */
     .volunteer{
         margin-top: 30px;
+        height: 650px;
     }
 
-    .volunteer .imgContBox{
-        background-color: #748c67
-    }
+    .volunteer .infoText{
+        margin: auto;
+        margin-top: 30px;
+        background-color: #748c67;
+    }       
 
     .volunteer .infoMainImg{
         background-image: url(../img/volunteerImg.jpg);
         background-size: cover;
         background-position: center center;
     }
-
-    .volunteer .infoText{
-        margin-left: 0px;
-        border: none;
-        position: relative;
-        top: -250px;
-    }       
-
     .volunteer .infoText ul{
         margin: auto;
-        width: 80%;
+        width: 70%;
+        margin-top: 50px;
     }
 
     .volunteer .infoText ul li span{
@@ -413,42 +421,198 @@
         color: #ebe6b3;
     }
 
-    .volunteer .infoText button{
-        width: 120px;
-        height: 35px;
-        background-color: #ebe6b3;
-        position: relative;
-        right: 0;
-        border-radius: 10px;
-        border: none;
-        ;
+    .volunteer .infoText ul li:nth-of-type(2),
+    .volunteer .infoText ul li:nth-of-type(3){
+        padding-left: 40px;
     }
 
-    .volunteer .infoText button span{
+    .volunteer .infoText button{
+        width: 120px;
+        height: 30px;
+        background-color: #ebe6b3;
+        float: right;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: none;
+        margin-right: 50px;
+    }
+
+    .volunteer .infoText button span i:first-of-type{
         display: none;
     }
 
+    .infoText button span{
+        border-radius: 0px;
+        background-color: #3c4935;
+        width: 40px;
+        height: 30px;
+        float: right;
+        margin: 0;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .infoText button span i:last-child{
+        margin: 0.5;
+        margin-top: 1.5px;
+        display: block;
+    }
+
+
     .volunteer .infoText button p{
-        font-size: 15px;
+        font-size: 14px;
         padding: 0px;
-        float: none;
         color: #3c4935;
+        line-height: 230%;;
+        margin-left: 14px;
+    }
+
+    .volunteer .yellowCircle{
+        background-color: #ebe6b3;
+        position: relative;
+        top: 210px;
+    }
+
+/* supporter */
+
+    .supporter .yellowCircle{
+        display: none;
+    }
+
+    .supporter .mainTitle{
+        margin-top: 0px;
+    }
+
+    .supporterTab{
+        height: 700px;
+    }
+
+    .label{
+        display: none;
+    }
+
+    .labelMo{
+        font-size: 20px;
+        font-weight: bold;
+        color: #5e7a4f;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+        display: block;
+    }
+
+    .labelMo label{
+        margin: 0px 10px;
+        padding: 0px 9.8px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+    .labelMo label:first-of-type,
+    .labelMo label:last-of-type{
+        margin: 0;
+    }
+
+    .lineBox{
+        width: 80%;
+        height: 177px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+
+    .lineBox .line{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 30px solid white;
+        border-radius: 100%;
+        background-color: transparent;
+    }
+
+    .supporterCont{
+        width: 90%;
+        height: 200px;
+        float: none;
+        clear: both;
+        background-color: #ebe6b3;
+        margin: auto;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .supporterTitle span{
+        font-size: 15px;
+    }
+
+    .supporterTitle{
+        font-size: 0px;
+        padding: 20px 0px 0px 20px;
+        font-weight: bold;
+    }
+
+    .supporterCont ul{
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .supporterCont ul li{
+        font-size: 15px;
+        padding: 3px 0px;
+        font-weight: 500;
+    }
+
+    .lineBox{
+        display: none;
+    }
+
+    #supporter{
+        width: 100%;
+        height: 280px;
+        clear: both;
+        margin-top: 30px;
+        display: block;
+    }
+    
+    .circle{
+        width: 70%;
+        display: none;
+        margin: auto;
+    }
+
+    .supporterTab input:nth-of-type(1):checked ~ #supporter div:nth-of-type(1){
+        display: block;
+    }
+     
+    .supporterTab input:nth-of-type(2):checked ~ #supporter div:nth-of-type(2){
+        display: block;
+    }
+    
+    .supporterTab input:nth-of-type(3):checked ~ #supporter div:nth-of-type(3){
+        display: block;
+    }
+    
+    .supporterTab input:nth-of-type(4):checked ~ #supporter div:nth-of-type(4){
+        display: block;
+    }
+    
+    .supporterTab input:nth-of-type(1):checked ~ .labelMo label:nth-of-type(1)
+    ,.supporterTab input:nth-of-type(2):checked ~ .labelMo label:nth-of-type(2)
+    ,.supporterTab input:nth-of-type(3):checked ~ .labelMo label:nth-of-type(3)
+    ,.supporterTab input:nth-of-type(4):checked ~ .labelMo label:nth-of-type(4)
+    
+    {
+        background-color: #ebe6b3
     }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-    .supporter,.business,footer,.bg{
+    
+    .business,footer,.bg,.subTitle{
         display: none;
         
     }
