@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/test01Moblie.css">
     <script src="https://kit.fontawesome.com/1847ff2012.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/progressbar.min.js"></script>
     <script>
         $(function(){
             $('.businessBox button').click(function(){
@@ -22,6 +23,81 @@
                 $('.businessBox button').show();
             })
         })
+
+        $(function(){
+            var circle1 = new ProgressBar.Circle('.circle1', {
+                strokeWidth: 15, //채워지는 원 두께
+                color:'#5c784e', //채워지는 원 색상
+                trailColor: '#f4f4f4', // 기본 원 색상
+                trailWidth: 15, // 기본 원 두께
+                text:{
+                    value:'250만원',
+                    style:{
+                        color:'#333',
+                        textAlign:'center',
+                        fontSize:'25px',
+                        fontWeight:'bold',
+                        marginTop:'-150px'
+                    }
+                }
+            });
+            circle1.animate(0.4); //얼만큼 채원지는지
+            
+            var circle2 = new ProgressBar.Circle('.circle2', {
+                strokeWidth: 15, //채워지는 원 두께
+                color:'#5c784e', //채워지는 원 색상
+                trailColor: '#f4f4f4', // 기본 원 색상
+                trailWidth: 15, // 기본 원 두께
+                text:{
+                    value:'500만원',
+                    style:{// text에 대한 style
+                        color:'#333',
+                        textAlign:'center',
+                        fontSize:'25px',
+                        fontWeight:'bold',
+                        marginTop:'-150px'
+                    }
+                }
+            });
+            circle2.animate(0.5); 
+            
+            var circle3 = new ProgressBar.Circle('.circle3', {
+                strokeWidth: 15, //채워지는 원 두께
+                color:'#5c784e', //채워지는 원 색상
+                trailColor: '#f4f4f4', // 기본 원 색상
+                trailWidth: 15, // 기본 원 두께
+                text:{
+                    value:'1,000만원',
+                    style:{// text에 대한 style
+                        color:'#333',
+                        textAlign:'center',
+                        fontSize:'25px',
+                        fontWeight:'bold',
+                        marginTop:'-150px'
+                    }
+                }
+            });
+            circle3.animate(0.7); 
+           
+            var circle4 = new ProgressBar.Circle('.circle4', {
+                strokeWidth: 15, //채워지는 원 두께
+                color:'#5c784e', //채워지는 원 색상
+                trailColor: '#f4f4f4', // 기본 원 색상
+                trailWidth: 15, // 기본 원 두께
+                text:{
+                    value:'공동혜택',
+                    style:{// text에 대한 style
+                        color:'#333',
+                        textAlign:'center',
+                        fontSize:'25px',
+                        fontWeight:'bold',
+                        marginTop:'-150px'
+                    }
+                }
+            });
+            circle4.animate(1); 
+
+         })
     </script>
 </head>
 <body>
@@ -318,6 +394,12 @@
                         <div class="line">
                             <div class="supporterLine"></div>
                         </div>
+                    </div>
+                    <div id="supporter">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                        <div class="circle circle4"></div>
                     </div>
                     <div class="supporterCont">
                         <div class="bronze">

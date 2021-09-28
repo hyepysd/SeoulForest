@@ -1066,6 +1066,7 @@ footer{
 }
 
 /* 모바일 안보이게 */
-.MoFlimimgBg,.MoFliming,.MoFlimingTab,.subTitleMo,.labelMo,.fa-angle-double-right{
+.MoFlimimgBg,.MoFliming,.MoFlimingTab,.subTitleMo
+,.labelMo,.fa-angle-double-right,#supporter{
     display: none;
 }
